@@ -10,199 +10,252 @@
     android:padding="16dp"
     android:background="@color/colorPrimaryDark">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Your profile has been analysed.\nHere is your personalised loan plan."
-        android:textAlignment="center"/>
-
     <LinearLayout
+        android:id="@+id/LL3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="12dp">
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_marginTop="250dp"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Credit Score is:"
+            android:layout_below="@+id/progressBar"
+            android:layout_centerHorizontal="true"
             android:textAlignment="center"
-            android:textSize="16dp"/>
-        <TextView
-            android:padding="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="740"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="48dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="out of 850"
-            android:textAlignment="center"
-            android:textSize="16dp"/>
+            android:text="Connecting to TU Server" />
     </LinearLayout>
-
-
     <LinearLayout
+        android:id="@+id/LL5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
-        <TextView
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:padding="8dp"
+            android:layout_marginTop="150dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="LOAN AMOUNT"
-            android:textSize="12dp"
-            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:scaleType="fitCenter"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="150,000"
-            android:layout_weight="1"
-            android:textSize="12dp"/>
+            android:layout_below="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:text="Your Loan Amount exceeded your quota" />
     </LinearLayout>
-
     <LinearLayout
+        android:id="@+id/LL4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LOAN PURPOSE"
-            android:textSize="12dp"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="INVESTMENT"
-            android:layout_weight="1"
-            android:textSize="12dp"/>
-    </LinearLayout>
+            android:text="Your profile has been analysed.\nHere is your personalised loan plan."
+            android:textAlignment="center"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TENOR"
-            android:textSize="12dp"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="24 Months"
-            android:layout_weight="1"
-            android:textSize="12dp"/>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="INTEREST RATE"
-            android:textSize="12dp"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="6.51%"
-            android:layout_weight="1"
-            android:textSize="12dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TOTAL PAYOFF(HKD)"
-            android:textSize="12dp"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="160,080"
-            android:layout_weight="1"
-            android:textSize="12dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="MONTHLY PAYOFF(HKD)"
-            android:textSize="12dp"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="6,670"
-            android:layout_weight="1"
-            android:textSize="12dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TRANSFER ACCOUNT"
-            android:textSize="12dp"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="HKD CURRENT"
-            android:layout_weight="1"
-            android:textSize="12dp"/>
-    </LinearLayout>
+            android:orientation="vertical"
+            android:padding="12dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Credit Score is:"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="740"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="48dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="out of 850"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+        </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/text_hyper_link"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:layout_below="@+id/tag_ll"
-        android:padding="1dp"
-        android:linksClickable="true"
-        android:maxLines = "10"
-        android:scrollbars = "vertical"
-        android:text="本人證明於本表格內所提供之資料全屬真確及詳盡並明白花旗銀行只會於成功核對本人身份後更新本人的個人資料 (如適用)。如以上資料日後有任何更改，本人均會立即通知閣下。本人同意授權閣下向任何有關方面核實上述填報之資料或與有關方面交換資料。本人保證（i）本人並沒破產；（ii）沒有就本人之破產呈請；（iii）本人並非償債無能力者；及（iv）本人及其他人士沒有就自願安排債務建議申請臨時命令。本人明白私隱政策指引乃本人已經或準備與閣下訂立之本申請書、所有合約、協議、賬戶授權書及其他有約束力的安排的不分割部份。在任何情況下，閣下有權根據本人之個別情況拒絕接納本申請。本人明白花旗銀行私人貸款由花旗銀行 (香港)有限公司所提供。 本人明白貴行、貴行之僱員、指定代理人或聯營機構可能擔任不同職務，及可能就直接或間接提供服務以收取佣金或其他酬金，或獲得好處或利益。該等佣金或其他酬金可能以定額計算及/或因應銷售表現和其他因素計算。 本人明白，如未能還款，除非欠款在還款到期後60日內全數清還，否則本人的戶口資料將會被信貸調查機構保留，直至欠款最終全數清還日起計五年後。本人有權要求花旗銀行(香港)有限公司向信貸調查機構提出刪除其資料庫中有關本人已終止戶口的任何資料，但必須在終止戶口時已全數清還欠款及在戶口終止前五年內就有關戶口沒有任何重大違約。 為防止洗黑錢及恐怖分子籌資活動，本人明白相關司法管轄區的法律及貴行的政策要求貴行向本人索取、核實及記錄資料以識別本人的身分。當本人申請花旗銀行私人貸款時，貴行須獲取本人之姓名﹑地址﹑出生日期及其他資料以協助貴行識別本人的身分。貴行亦須查證本人備有相片的身分證明文件或其他證明文件並保留副本。 本人同意遞交本人之私人貸款申請，並同意花旗銀行職員透過電話聯絡本人，同時提供其它個人資料來完成整個申請程序。若申請表及其他有關文件的內文之中英文版本有差異，將以英文版本為準。\n
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOAN AMOUNT"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="150,000"
+                android:layout_weight="1"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOAN PURPOSE"
+                android:textSize="12dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INVESTMENT"
+                android:layout_weight="1"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TENOR"
+                android:textSize="12dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24 Months"
+                android:layout_weight="1"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INTEREST RATE"
+                android:textSize="12dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.51%"
+                android:layout_weight="1"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOTAL PAYOFF(HKD)"
+                android:textSize="12dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="160,080"
+                android:layout_weight="1"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MONTHLY PAYOFF(HKD)"
+                android:textSize="12dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6,670"
+                android:layout_weight="1"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TRANSFER ACCOUNT"
+                android:textSize="12dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HKD CURRENT"
+                android:layout_weight="1"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_hyper_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/tag_ll"
+            android:padding="1dp"
+            android:linksClickable="true"
+            android:maxLines = "10"
+            android:scrollbars = "vertical"
+            android:text="本人證明於本表格內所提供之資料全屬真確及詳盡並明白花旗銀行只會於成功核對本人身份後更新本人的個人資料 (如適用)。如以上資料日後有任何更改，本人均會立即通知閣下。本人同意授權閣下向任何有關方面核實上述填報之資料或與有關方面交換資料。本人保證（i）本人並沒破產；（ii）沒有就本人之破產呈請；（iii）本人並非償債無能力者；及（iv）本人及其他人士沒有就自願安排債務建議申請臨時命令。本人明白私隱政策指引乃本人已經或準備與閣下訂立之本申請書、所有合約、協議、賬戶授權書及其他有約束力的安排的不分割部份。在任何情況下，閣下有權根據本人之個別情況拒絕接納本申請。本人明白花旗銀行私人貸款由花旗銀行 (香港)有限公司所提供。 本人明白貴行、貴行之僱員、指定代理人或聯營機構可能擔任不同職務，及可能就直接或間接提供服務以收取佣金或其他酬金，或獲得好處或利益。該等佣金或其他酬金可能以定額計算及/或因應銷售表現和其他因素計算。 本人明白，如未能還款，除非欠款在還款到期後60日內全數清還，否則本人的戶口資料將會被信貸調查機構保留，直至欠款最終全數清還日起計五年後。本人有權要求花旗銀行(香港)有限公司向信貸調查機構提出刪除其資料庫中有關本人已終止戶口的任何資料，但必須在終止戶口時已全數清還欠款及在戶口終止前五年內就有關戶口沒有任何重大違約。 為防止洗黑錢及恐怖分子籌資活動，本人明白相關司法管轄區的法律及貴行的政策要求貴行向本人索取、核實及記錄資料以識別本人的身分。當本人申請花旗銀行私人貸款時，貴行須獲取本人之姓名﹑地址﹑出生日期及其他資料以協助貴行識別本人的身分。貴行亦須查證本人備有相片的身分證明文件或其他證明文件並保留副本。 本人同意遞交本人之私人貸款申請，並同意花旗銀行職員透過電話聯絡本人，同時提供其它個人資料來完成整個申請程序。若申請表及其他有關文件的內文之中英文版本有差異，將以英文版本為準。\n
 本人明白貴行、貴行之僱員、指定代理人或聯營機構可能擔任不同職務，及可能就直接或間接提供服務以收取佣金或其他酬金，或獲得好處或利益。該等佣金或其他酬金可能以定額計算及/或因應銷售表現和其他因素計算。\n本人明白，如未能還款，除非欠款在還款到期後60日內全數清還，否則本人的戶口資料將會被信貸調查機構保留，直至欠款最終全數清還日起計五年後。本人有權要求花旗銀行 (香港)有限公司向信貸調查機構提出刪除其資料庫中有關本人已終止戶口的任何資料，但必須在終止戶口時已全數清還欠款及在戶口終止前五年內就有關戶口沒有任何重大違約。"
-        android:textColor="@color/colorWhite"
-        android:layout_marginBottom="8dp"/>
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:onClick="transactionActivity"
-        android:textColor="@color/colorWhite"
-        android:textStyle="bold"
-        android:text="APPLY FOR LOAN" />
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="transactionActivity"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="APPLY FOR LOAN" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

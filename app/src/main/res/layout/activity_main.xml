@@ -14,11 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
@@ -28,33 +23,7 @@
                 android:text="Identity Proof\n(HKID card)"
                 android:textStyle="bold"
                 />
-            <ImageView
-                android:id="@+id/CAMERA1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/button5"
-                android:layout_alignTop="@+id/button5"
-                android:layout_centerHorizontal="true"
-                android:elevation="4dp"/>
 
-            <ProgressBar
-                android:id="@+id/progress4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/button5"
-                android:layout_alignTop="@+id/button5"
-                android:layout_centerHorizontal="true"
-                android:indeterminate="true"
-                android:elevation="2dp"
-                android:indeterminateTint="@android:color/holo_blue_dark"
-                android:visibility="invisible" />
-        </RelativeLayout>
-
-
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
             <Button
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
@@ -64,30 +33,12 @@
                 android:text="Salary Proof\n(Tax note)"
                 android:textStyle="bold"
                 />
-
-            <ProgressBar
-                android:id="@+id/progress2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/button6"
-                android:layout_alignTop="@+id/button6"
-                android:layout_centerHorizontal="true"
-                android:indeterminate="true"
-                android:elevation="2dp"
-                android:indeterminateTint="@android:color/holo_blue_dark"
-                android:visibility="invisible" />
-        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
             <Button
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
@@ -97,25 +48,6 @@
                 android:text="Residential Proof\n(Invoices)"
                 android:textStyle="bold"
                 />
-
-            <ProgressBar
-                android:id="@+id/progress1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/button1"
-                android:layout_alignTop="@+id/button1"
-                android:layout_centerHorizontal="true"
-                android:indeterminate="true"
-                android:elevation="2dp"
-                android:indeterminateTint="@android:color/holo_blue_dark"
-                android:visibility="invisible" />
-        </RelativeLayout>
-
-
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
             <Button
                 android:id="@+id/button7"
                 android:layout_width="match_parent"
@@ -125,19 +57,6 @@
                 android:text="Employment Proof\n(IR56)"
                 android:textStyle="bold"
                 />
-
-            <ProgressBar
-                android:id="@+id/progress3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/button7"
-                android:layout_alignTop="@+id/button7"
-                android:layout_centerHorizontal="true"
-                android:indeterminate="true"
-                android:elevation="2dp"
-                android:indeterminateTint="@android:color/holo_blue_dark"
-                android:visibility="invisible" />
-        </RelativeLayout>
 
     </LinearLayout>
 
@@ -163,6 +82,7 @@
             android:textSize="12dp"
             android:textColor="@color/colorWhite"/>
             <EditText
+                android:id="@+id/loanAmount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Loan Amount here"

@@ -14,7 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,6 +25,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 static final int REQUEST_CAMERA = 1;
+    int counter=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +52,15 @@ private Button buttonView;
     }
 
     public void confirmationActivity(View view) {
+        //Create an intent
         Intent intent = new Intent(this, ConfirmationActivity.class);
+        EditText edit = (EditText)findViewById(R.id.loanAmount);
+        intent.putExtra("LA", edit.getText().toString());
         startActivity(intent);
+        Toast.makeText(MainActivity.this,"Take a selfie with your ID card for verification",Toast.LENGTH_LONG).show();
+        //camera out here
+        Intent cameraI = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(cameraI, REQUEST_CAMERA);
+
     }
 }
